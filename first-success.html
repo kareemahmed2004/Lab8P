@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href=“https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css” rel=“stylesheet”>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Responsive Navigation Bar with Dropdown</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #f8f8f8; /* Off-white background */
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .top-bar {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-bottom: 10px;
+        }
+
+        .top-bar .logo {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+
+        .top-bar .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .top-bar .search-container {
+            flex-grow: 2;
+            display: flex;
+            justify-content: center;
+            order: 2;
+        }
+
+        .top-bar .search-container input[type="text"] {
+            width: 70%; /* Enlarged search bar */
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .top-bar .menu {
+            display: flex;
+            align-items: center;
+            order: 3;
+        }
+
+        .top-bar .menu a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .top-bar .menu a:hover {
+            color: #ff0000; /* Change color on hover */
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f8f8f8;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+            }
+
+            .top-bar .search-container {
+                width: 100%;
+                order: 2;
+                margin-bottom: 10px;
+            }
+
+            .top-bar .search-container input[type="text"] {
+                width: 90%;
+            }
+
+            .top-bar .menu {
+                order: 3;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .top-bar .logo {
+                order: 1;
+                justify-content: center;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="top-bar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo"> <!-- Replace with your logo -->
+                <span>Deliver to <strong>Cairo</strong></span>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="What are you looking for?">
+            </div>
+            <div class="menu">
+                <a href="#">العربية</a>
+                <a href="#">Log in</a>
+                <a href="#">Wishlist</a>
+                <a href="#">Cart</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa-solid fa-angle-down"></i> Categories</button> 
+            <div class="dropdown-content">
+                <a href="#">ALL CATEGORIES</a>
+                <a href="#">ELECTRONICS</a>
+                <a href="#">MOBILES</a>
+                <a href="#">MEN</a>
+                <a href="#">WOMEN</a>
+                <a href="#">HOME</a>
+                <a href="#">BEAUTY & HEALTH</a>
+                <a href="#">BABY & TOYS</a>
+                <a href="#">SUPERMARKET</a>
+                <a href="#">SELL ON NOON</a>
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

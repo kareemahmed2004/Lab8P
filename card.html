@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;    
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  margin-top: 50px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 black;
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.card:hover {
+        box-shadow: 0 8px 16px 0 black;
+      }
+</style>
+</head>
+<body>
+
+<h2>Responsive Column Cards</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iste quas sapiente minus rerum! Facilis, tenetur necessitatibus! Repudiandae maxime atque, ullam quidem facilis fugiat officiis facere distinctio quis itaque quas soluta! Voluptate, consequuntur ducimus! Modi esse expedita beatae ducimus harum nisi, ex enim fuga rem totam qui tempore nobis dicta? Officia nostrum impedit distinctio reiciendis quod, consequatur quisquam esse veniam, ipsam doloremque modi qui, eaque repudiandae! Velit, rerum officia magnam numquam hic asperiores at alias voluptatem, et eum inventore! Nihil eos molestiae voluptas, ut, expedita dicta dolor at dignissimos delectus quas placeat. Velit quae alias cumque sit, nihil, aliquam beatae sint, impedit tempore iure unde dolorum magnam? Voluptatum minus totam doloremque quasi, voluptatibus exercitationem quas soluta consequatur neque, eum magni consectetur nemo? Sint perferendis est voluptatibus, voluptas quisquam omnis nihil esse molestias ea debitis consequuntur sequi distinctio consectetur eaque voluptatum odio. Sapiente aliquid accusantium eveniet quisquam quibusdam eligendi quis, sit vitae velit voluptates explicabo facilis quasi exercitationem ad quod assumenda? Ullam beatae iure quia obcaecati ducimus! Totam quaerat dolor in possimus ullam autem neque quod quae ut voluptatum veritatis, nisi sequi temporibus provident placeat numquam nihil a nemo debitis blanditiis minima ratione voluptatem modi similique. Ut nesciunt esse, perspiciatis quam aspernatur ad quidem doloremque! Odit placeat saepe quisquam totam ab nostrum, doloremque sapiente amet facilis deleniti quam numquam commodi ducimus explicabo magnam perspiciatis laborum sint non consequuntur eveniet vero. Quaerat, quos! Dolore, accusantium nemo aliquam minima cupiditate voluptates ipsum odit sapiente similique delectus temporibus libero, nostrum distinctio blanditiis obcaecati eum culpa. Provident minima illum dolor dignissimos consequatur animi, possimus architecto. Vel nulla eaque odit odio quis magnam necessitatibus quam provident totam qui eligendi nobis, distinctio suscipit natus animi cupiditate quod. Minus illo deleniti quisquam modi optio maiores, reiciendis atque at, vero iusto voluptatem mollitia labore asperiores perspiciatis incidunt enim sed.</p>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>product name</h3>
+      <img src="https://cdn.britannica.com/35/238335-050-2CB2EB8A/Lionel-Messi-Argentina-Netherlands-World-Cup-Qatar-2022.jpg"
+      alt="Goat" style="width:100%">
+      <h3>description</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h3>product name</h3>
+      <img src="https://cdn.britannica.com/35/238335-050-2CB2EB8A/Lionel-Messi-Argentina-Netherlands-World-Cup-Qatar-2022.jpg"
+      alt="Goat" style="width:100%">
+      <h3>description</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h3>product name</h3>
+      <img src="https://cdn.britannica.com/35/238335-050-2CB2EB8A/Lionel-Messi-Argentina-Netherlands-World-Cup-Qatar-2022.jpg"
+      alt="Goat" style="width:100%">
+      <h3>description</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h3>product name</h3>
+      <img src="https://cdn.britannica.com/35/238335-050-2CB2EB8A/Lionel-Messi-Argentina-Netherlands-World-Cup-Qatar-2022.jpg"
+      alt="Goat" style="width:100%">
+      <h3>description</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h3>product name</h3>
+      <img src="https://cdn.britannica.com/35/238335-050-2CB2EB8A/Lionel-Messi-Argentina-Netherlands-World-Cup-Qatar-2022.jpg"
+      alt="Goat" style="width:100%">
+      <h3>description</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h3>product name</h3>
+      <img src="https://cdn.britannica.com/35/238335-050-2CB2EB8A/Lionel-Messi-Argentina-Netherlands-World-Cup-Qatar-2022.jpg"
+      alt="Goat" style="width:100%">
+      <h3>description</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h3>product name</h3>
+      <img src="https://cdn.britannica.com/35/238335-050-2CB2EB8A/Lionel-Messi-Argentina-Netherlands-World-Cup-Qatar-2022.jpg"
+      alt="Goat" style="width:100%">
+      <h3>description</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h3>product name</h3>
+      <img src="https://cdn.britannica.com/35/238335-050-2CB2EB8A/Lionel-Messi-Argentina-Netherlands-World-Cup-Qatar-2022.jpg"
+      alt="Goat" style="width:100%">
+      <h3>description</h3>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
